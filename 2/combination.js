@@ -4,7 +4,7 @@ const processButton = document.getElementById('processCsv'); // process実行ボ
 // ボタン機能
 processButton.addEventListener('click', () => {
   // ファイル読み込み、処理してoutputElementに出力
-  fetch('seprated_data.csv') 
+  fetch('separated_data.csv') 
     .then(response => response.text())
     .then(data => {
       const combinedData = combineCsvData(data);
